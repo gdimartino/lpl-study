@@ -1,8 +1,12 @@
-.item1 { grid-area: title; }
-.item2 { grid-area: subtitle; }
-.item3 { grid-area: name; }
-.item4 { grid-area: date; }
-.item5 { grid-area: summary; }
+/*
+ * HEADER GRID
+ */
+ 
+.header1 { grid-area: title; }
+.header2 { grid-area: subtitle; }
+.header3 { grid-area: name; }
+.header4 { grid-area: date; }
+.header5 { grid-area: summary; }
 
 .grid-header {
     display: grid;
@@ -38,16 +42,6 @@
     padding-bottom: 80px;
 }
 
-.name-date {
-    text-align: center;
-    background-color: rgb(185, 189, 182);
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    font-weight: 300;
-    padding-top: 22px;
-    padding-bottom: 22px;
-}
-
 .summary {
     font-size: 56px;
     font-weight: 300;
@@ -55,4 +49,56 @@
     padding-top: 10px;
     padding-bottom: 0px;
     background-color: rgb(255, 255, 255);
+}
+
+/*
+ * SUMMARY GRID
+ */
+.summary1 { grid-area: iconLeft1}
+.summary2 { grid-area: titleLeft1}
+.summary3 { grid-area: valueLeft1}
+.summary4 { grid-area: iconRight1}
+.summary5 { grid-area: titleRight1}
+.summary6 { grid-area: valueRight1}
+.summary31 { grid-area: footer}
+
+.grid-summary {
+    display: grid;
+    grid-template-areas:
+        'iconLeft1 titleLeft1 titleLeft1 iconRight1 titleRight1 titleRight1'
+        'iconLeft1 valueLeft1 valueLeft1 iconRight1 valueRight1 valueRight1'
+        'footer footer footer footer footer footer';
+    gap: 40px 0px;
+    padding-top: 40px;
+}
+
+.cell-title {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.cell-value {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+/*
+ * COMMON
+ */
+
+.separator {
+    text-align: center;
+    background-color: rgb(185, 189, 182);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
