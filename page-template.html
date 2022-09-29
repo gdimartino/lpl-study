@@ -4,6 +4,7 @@
 <title>Page Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/w3-style.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -17,32 +18,35 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <body>
 
 <!-- Header -->
-<header class="w3-container w3-teal w3-center " style="padding-top:128px; padding-bottom: 48px">
-  <h1 class="w3-margin w3-jumbo">HEALTH REPORT</h1>
-  <p class="w3-xlarge">LPL STUDY</p>
-</header>
+<div class="grid-header">
+  <div class="item1 title">HEALTH REPORT</div>
+  <div class="item2 subtitle">LPL STUDY</div>
+  <div class="item3 name-date">NAME:JOHN DOE</div>  
+  <div class="item4 name-date">DATE OF COLLECTION: 8/10/2022</div>
+  <div class="item5 summary">Summary:</div>
+</div>
 
-<!-- Top Divider -->
-<div class="w3-container w3-grey w3-center w3-opacity w3-padding-16">
-    <div class="w3-half">
-        <h1 class="w3-margin w3-xlarge w3-text-white">NAME: JOHN DOE</h1>
-    </div>
+<!-- Summary Grid -->
+<div class="row">
+  <div class="column">
+    <h2>MDS-UPDRS:</h2>
+    <h2>87</h2>
+  </div>
+  <div class="column">
+    <h2>SPPB Score:</h2>
+    <h2>24</h2>
+  </div>
 </div>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
     <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+      <img src="assets/images/soccerball.png" width="80">
+    </div>
+    <div class="w3-twothird w3-center">
+      <h1>Lorem Ipsum</h1>
+      <h1>Lorem Ipsum</h1>
     </div>
   </div>
 </div>
@@ -65,7 +69,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
 </div>
 
-<div class="w3-container w3-grey w3-center w3-opacity w3-padding-16">
+<div class="w3-container w3-grey w3-center w3-opacity">
     <h1 class="w3-margin w3-xlarge w3-text-white">1530 CONCORDIA WEST, IRVINE CA</h1>
 </div>
 
